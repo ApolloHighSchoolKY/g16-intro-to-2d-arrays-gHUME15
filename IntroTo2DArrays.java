@@ -64,23 +64,16 @@ public class IntroTo2DArrays{
       System.out.println("The sum of row " + row + " is: " + sum);
     }
 
-    System.out.println("\n\n\nHomwork assignment");
-    //Add up all of the values of the array using for each loops...
+    System.out.println("\n\n\nHomework assignment");
 
-
-
-    int sum1 = 0;
-    for(int row=0; row<ray.length; row++)
-    {
-      sum1 = 0;
-      for(int col=0; col<ray[col].length; col++)
-      {
-        sum1+= ray[col][row];
-      }
-      System.out.println("The sum of row " + row + " is: " + sum1);
-
-      //for(array: i array ray)
+// Sum all values using a for each loop
+int sum1 = 0;
+for (int[] rowArray : ray) {
+    for (int num : rowArray) { 
+        sum1 += num;
     }
+}
 
-    }
+System.out.println("The total sum of all elements in the 2D array is: " + sum1);
+}
 }
